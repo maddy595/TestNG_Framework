@@ -18,7 +18,7 @@ public class TestNGBasics {
 	
 	@BeforeSuite
 	public void setUp() {
-		System.out.println("Setup for CHrome");
+		System.out.println("Setup for Chrome");
 	}
 	
 	
