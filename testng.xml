@@ -1,0 +1,17 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "TestNGBasic" thread-count="3" parallel="methods" >
+
+	<test name = "Basic Test 1">
+		<classes>
+			<class name = "com.test.TestNGBasics" >
+			</class>
+		</classes>
+	</test>	
+</suite>
+
+
+
+
+

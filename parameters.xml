@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+
+<suite name="Testing a Parameters Program">
+	
+	<test name ="First Test">	
+	<parameter name = "FirstName1" value = "Madhav1"/>
+	<parameter name = "FirstName2" value = "Madhav2"/>
+	<parameter name = "FirstName3" value = "Madhav3"/>	 
+		<classes>
+			<class name = "com.test2.ParameterizedTest1" />	 
+		</classes>
+	</test>	
+</suite>
+

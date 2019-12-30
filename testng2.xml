@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+
+<suite name="My Sample Program">
+
+<listeners>
+	<listener class-name="com.test2.Implementlisteners"/>
+</listeners>
+<parameter name="FirstName" value="Madhav" />
+	<test name ="First Test">		 
+		<classes>
+			<class name = "com.test2.TestCases" />	 
+		</classes>
+	</test>	
+</suite>
+
