@@ -53,6 +53,26 @@
 	    <artifactId>poi-ooxml-schemas</artifactId>
 	    <version>4.1.1</version>
 	</dependency>
-    
+	
   </dependencies>
+  
+  <build>
+	<plugins>
+	      <plugin>
+	        <groupId>org.apache.maven.plugins</groupId>
+	        <artifactId>maven-surefire-plugin</artifactId>
+	        <version>3.0.0-M3</version>
+	        <configuration>
+	          <suiteXmlFiles>
+	            <suiteXmlFile>testng.xml</suiteXmlFile>
+	          </suiteXmlFiles>
+	          <systemPropertyVariables>
+	          	<executionbrowser> ${browser} </executionbrowser> 
+	          </systemPropertyVariables>
+	          
+	        </configuration>
+	      </plugin>
+	</plugins>
+  </build>
+  
 </project>
