@@ -43,10 +43,10 @@ public class TestNGBasics {
 		System.out.println("Google Title Test 1");
 		System.out.println(Thread.currentThread().getId());
 	}
-	@Parameters({"FirstName"})
+	
 	@Test()
-	public void googleTitleTest2(String Name) {
-		System.out.println("Name -> " +Name );
+	public void googleTitleTest2() {
+		System.out.println("Name -> " );
 		System.out.println(Thread.currentThread().getId());
 	}
 	@Test(priority=1,groups= {"Mode1"})
@@ -67,7 +67,7 @@ public class TestNGBasics {
 		System.out.println(Thread.currentThread().getId());
 	}
 	
-	@AfterSuite(enabled=false)
+	@AfterSuite()
 	public void deletesetUp() {
 		System.out.println("Delete the Setup");
 	}
